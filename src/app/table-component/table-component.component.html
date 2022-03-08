@@ -1,0 +1,30 @@
+<div class="container">
+<table class="table">
+    
+    <thead>
+      <tr *ngFor = "let heading of TH_HEROS">
+        <th scope="col">{{heading.TH_ID}}</th>
+        <th scope="col">{{heading.TH_NAME}}</th>
+        <th scope="col">{{heading.TH_AGE}}</th>
+        <th scope="col">{{heading.TH_EDIT}}</th>
+        <th scope="col">{{heading.TH_DELETE}}</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      <tr *ngFor="let hero of TD_HEROS">
+        <td>{{hero.id}}</td>
+        <td>{{hero.name}}</td>
+        <td>{{hero.age}}</td>
+        <td> 
+          <button type="button" class="btn btn-warning">Edit</button>  
+        </td>
+        <td> 
+          <button type="button" class="btn btn-danger">Delete</button>  
+        </td>
+      </tr>  
+    </tbody>
+  
+  </table>
+</div>
