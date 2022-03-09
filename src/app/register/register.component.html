@@ -1,0 +1,44 @@
+<div class="container">
+  <br><br><br>
+ 
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Username</span>
+        <input type="text"  
+               #box1               
+        class="form-control" placeholder="Username"
+          aria-describedby="basic-addon1" />
+    </div>
+      
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Password</span>
+        
+        
+        <input type="password" 
+               #box2
+
+        class="form-control" placeholder="Password"
+          aria-describedby="basic-addon1" />
+
+
+
+    </div>     
+      
+      
+    <div class="input-group mb-3">
+        <span class="input-group-text" id="basic-addon1">Confirm Password</span>
+        
+        
+        
+        <input type="password" 
+              #box3
+        class="form-control" placeholder="Confirm Password"
+    
+        aria-describedby="basic-addon1" />
+    
+    
+    
+        </div>
+
+    <button type="button" (click) = "getUserData(box1.value, box2.value, box3.value)" class="btn btn-primary">Register</button>
+  
+</div>
