@@ -27,6 +27,7 @@ import { TableComponentComponent } from './table-component/table-component.compo
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { AppRoutingModule } from './app-routing.module';
     NavbarComponentComponent,
     TableComponentComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    PieChartComponent
   ],
   imports: [
     BrowserModule,

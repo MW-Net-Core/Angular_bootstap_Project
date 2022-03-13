@@ -4,13 +4,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { RegisterComponent } from 'src/app/register/register.component'
 import { LoginComponent } from 'src/app/login/login.component'
 import { TableComponentComponent } from 'src/app/table-component/table-component.component'
+import { PieChartComponent } from 'src/app/pie-chart/pie-chart.component'
 
 
 
 const routes: Routes = [
   { path: 'Register', component: RegisterComponent },
   { path: 'Login', component: LoginComponent },
-  { path: 'Table', component: TableComponentComponent }
+  { path: 'Table', component: TableComponentComponent },
+  { path: 'Pie-Chart', component: PieChartComponent },
 ];
 
 @NgModule({
