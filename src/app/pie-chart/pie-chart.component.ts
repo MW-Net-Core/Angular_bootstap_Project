@@ -34,7 +34,7 @@ export class PieChartComponent implements AfterViewInit  {
             '#f1c40f',
             '#e74c3c'
           ],
-          data: [12, 19, 3, 17, 28, 24]
+          data: [40, 5, 5, 6, 4, 40]
         }]
       }
     });

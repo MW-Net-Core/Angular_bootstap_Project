@@ -10,10 +10,11 @@ export class SharedService {
   constructor(private http: HttpClient) { }
 
   RegisterUser(val: any) {  
-    
     return this.http.post(this.APIUrl + '/Authenticate/Register', val);  
   }
 
-
+  LoginUser(val: any){
+    return this.http.post(this.APIUrl + '/Authenticate/Login', val);  
+  }
 
 }

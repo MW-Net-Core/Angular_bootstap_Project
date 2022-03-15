@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { SharedService } from 'src/app/shared.service';
+import { LoginDTO } from 'src/app/login/LoginDTO';
+import { FormGroup, FormControl, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +10,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private shared: SharedService) { }
+
+  loginForm:FormGroup=new FormGroup({
+    userName:new FormControl(''),
+    password:new FormControl(''),
+  })
 
   ngOnInit(): void {
   }
+
+  getUserDataForLogin(){
+    let data = this.loginForm.value as LoginDTO;
+    console.log(data);
+    this.shared.LoginUser(data).subscribe(res => {
+      if(res){
+        console.log(res);
+      }
+    });
+
+  }
+
+
+
+
+
 
 }
